@@ -1,6 +1,7 @@
 ﻿using Oxide.Core;
 using Oxide.Core.Extensions;
 using Oxide.Ext.SuperNPC.Logging;
+using Oxide.Ext.SuperNPC.Plugins;
 
 namespace Oxide.Ext.SuperNPC
 {
@@ -11,7 +12,7 @@ namespace Oxide.Ext.SuperNPC
         public static string _name = "Super NPC";
         public static string _author = "Ultrah Servers";
         public static VersionNumber _extensionVersion = new(0, 0, 1);
-        public Logger _extensionLogger;
+        public static Logger _extensionLogger;
 
         // Initialise extension details
         public override string Name => _name;
@@ -23,6 +24,7 @@ namespace Oxide.Ext.SuperNPC
         {
             _extensionLogger = new Logger(LogLevel.Info);
             _extensionLogger.Info("Logger has been enabled");
+            Manager.RegisterPluginLoader(new SuperNPCPluginLoader());
         }
     }
 }

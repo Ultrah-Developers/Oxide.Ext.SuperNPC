@@ -8,7 +8,7 @@ namespace Oxide.Ext.SuperNPC.NPC.Motor
 {
     internal class Movement : SuperNPCPlugin
     {
-        public void MoveTo(Vector3 pos)
+        private class CoreMovement : MonoBehaviour
         {
 
         }

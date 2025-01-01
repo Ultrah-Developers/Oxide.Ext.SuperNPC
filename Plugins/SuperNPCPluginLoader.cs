@@ -6,11 +6,12 @@ namespace Oxide.Ext.SuperNPC.Plugins
     {
         public override Type[ ] CorePlugins => new[ ] 
         { 
-            typeof(SuperNPCExtensionCore), typeof(NPC.Motor.Movement),
-            typeof(SuperNPCExtensionCore), typeof(NPC.CoreNPC),
-            typeof(SuperNPCExtensionCore), typeof(NPC.Perception.SoundSense),
-            typeof(SuperNPCExtensionCore), typeof(NPC.Perception.TouchSense),
-            typeof(SuperNPCExtensionCore), typeof(NPC.Perception.VisionSense),
+            typeof(SuperNPCExtensionCore),
+            typeof(NPC.Motor.Movement),
+            typeof(NPC.CoreNPC),
+            typeof(NPC.Perception.SoundSense),
+            typeof(NPC.Perception.TouchSense),
+            typeof(NPC.Perception.VisionSense),
         };
     }
 }
