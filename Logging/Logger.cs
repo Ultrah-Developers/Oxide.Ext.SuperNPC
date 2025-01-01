@@ -2,7 +2,7 @@
 
 namespace Oxide.Ext.SuperNPC.Logging
 {
-    internal class Logger : ILog
+    public class Logger : ILog
     {
         private LogLevel _logLevel;
 
@@ -18,23 +18,23 @@ namespace Oxide.Ext.SuperNPC.Logging
             switch (logLevel)
             {
                 case LogLevel.Info:
-                    Interface.Oxide.LogInfo(message);
+                    Interface.Oxide.LogInfo($"[{SuperNPCExtension._name}] {message}");
                     break;
 
                 case LogLevel.Warning:
-                    Interface.Oxide.LogWarning(message);
+                    Interface.Oxide.LogWarning($"[{SuperNPCExtension._name}] {message}");
                     break;
 
                 case LogLevel.Error:
-                    Interface.Oxide.LogError(message);
+                    Interface.Oxide.LogError($"[{SuperNPCExtension._name}] {message}");
                     break;
 
                 case LogLevel.Debug:
-                    Interface.Oxide.LogDebug(message);
+                    Interface.Oxide.LogDebug($"[{SuperNPCExtension._name}] {message}");
                     break;
 
                 case LogLevel.Exception:
-                    Interface.Oxide.LogException(message, exception);
+                    Interface.Oxide.LogException($"[{SuperNPCExtension._name}] {message}", exception);
                     break;
             }
         }
