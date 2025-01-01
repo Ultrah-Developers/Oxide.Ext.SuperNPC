@@ -1,112 +1,544 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <RustDllPath>\PATH HERE\</RustDllPath>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <Reference Include="Assembly-CSharp">
-      <HintPath>$(RustDllPath)Assembly-CSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="Facepunch.Console">
-      <HintPath>$(RustDllPath)Facepunch.Console.dll</HintPath>
-    </Reference>
-    <Reference Include="Facepunch.Network">
-      <HintPath>$(RustDllPath)Facepunch.Network.dll</HintPath>
-    </Reference>
-    <Reference Include="Facepunch.Rcon">
-      <HintPath>$(RustDllPath)Facepunch.Rcon.dll</HintPath>
-    </Reference>
-    <Reference Include="Facepunch.Sqlite">
-      <HintPath>$(RustDllPath)Facepunch.Sqlite.dll</HintPath>
-    </Reference>
-    <Reference Include="Facepunch.UnityEngine">
-      <HintPath>$(RustDllPath)Facepunch.UnityEngine.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Data.Tds">
-      <HintPath>$(RustDllPath)Mono.Data.Tds.dll</HintPath>
-    </Reference>
-    <Reference Include="MySql.Data">
-      <HintPath>$(RustDllPath)MySql.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="Oxide.Common">
-      <HintPath>$(RustDllPath)Oxide.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Oxide.Core">
-      <HintPath>$(RustDllPath)Oxide.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Oxide.CSharp">
-      <HintPath>$(RustDllPath)Oxide.CSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="Oxide.MySql">
-      <HintPath>$(RustDllPath)Oxide.MySql.dll</HintPath>
-    </Reference>
-    <Reference Include="Oxide.References">
-      <HintPath>$(RustDllPath)Oxide.References.dll</HintPath>
-    </Reference>
-    <Reference Include="Oxide.Rust">
-      <HintPath>$(RustDllPath)Oxide.Rust.dll</HintPath>
-    </Reference>
-    <Reference Include="Oxide.SQLite">
-      <HintPath>$(RustDllPath)Oxide.SQLite.dll</HintPath>
-    </Reference>
-    <Reference Include="Oxide.Unity">
-      <HintPath>$(RustDllPath)Oxide.Unity.dll</HintPath>
-    </Reference>
-    <Reference Include="Rust.Clans.Local">
-      <HintPath>$(RustDllPath)Rust.Clans.Local.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Configuration.Install">
-      <HintPath>$(RustDllPath)System.Configuration.Install.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Data.SQLite">
-      <HintPath>$(RustDllPath)System.Data.SQLite.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.AI.Navigation">
-      <HintPath>$(RustDllPath)Unity.AI.Navigation.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst">
-      <HintPath>$(RustDllPath)Unity.Burst.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst.Unsafe">
-      <HintPath>$(RustDllPath)Unity.Burst.Unsafe.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Collections">
-      <HintPath>$(RustDllPath)Unity.Collections.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Collections.LowLevel.ILSupport">
-      <HintPath>$(RustDllPath)Unity.Collections.LowLevel.ILSupport.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Formats.Fbx.Runtime">
-      <HintPath>$(RustDllPath)Unity.Formats.Fbx.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Mathematics">
-      <HintPath>$(RustDllPath)Unity.Mathematics.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.MemoryProfiler">
-      <HintPath>$(RustDllPath)Unity.MemoryProfiler.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Recorder">
-      <HintPath>$(RustDllPath)Unity.Recorder.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Recorder.Base">
-      <HintPath>$(RustDllPath)Unity.Recorder.Base.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TerrainTools">
-      <HintPath>$(RustDllPath)Unity.TerrainTools.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>$(RustDllPath)Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline">
-      <HintPath>$(RustDllPath)Unity.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine">
-      <HintPath>$(RustDllPath)UnityEngine.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
+	<ItemGroup>
+		<Reference Include="0Harmony">
+		<HintPath>D:\dependancies\0Harmony.dll</HintPath>
+		</Reference>
+		<Reference Include="Assembly-CSharp">
+		<HintPath>D:\dependancies\Assembly-CSharp.dll</HintPath>
+		</Reference>
+		<Reference Include="Assembly-CSharp-firstpass">
+		<HintPath>D:\dependancies\Assembly-CSharp-firstpass.dll</HintPath>
+		</Reference>
+		<Reference Include="Autodesk.Fbx">
+		<HintPath>D:\dependancies\Autodesk.Fbx.dll</HintPath>
+		</Reference>
+		<Reference Include="Azure.Core">
+		<HintPath>D:\dependancies\Azure.Core.dll</HintPath>
+		</Reference>
+		<Reference Include="Azure.Identity">
+		<HintPath>D:\dependancies\Azure.Identity.dll</HintPath>
+		</Reference>
+		<Reference Include="Azure.Storage.Blobs">
+		<HintPath>D:\dependancies\Azure.Storage.Blobs.dll</HintPath>
+		</Reference>
+		<Reference Include="Azure.Storage.Common">
+		<HintPath>D:\dependancies\Azure.Storage.Common.dll</HintPath>
+		</Reference>
+		<Reference Include="Cinemachine">
+		<HintPath>D:\dependancies\Cinemachine.dll</HintPath>
+		</Reference>
+		<Reference Include="Cronos">
+		<HintPath>D:\dependancies\Cronos.dll</HintPath>
+		</Reference>
+		<Reference Include="CurvedTextMeshPro">
+		<HintPath>D:\dependancies\CurvedTextMeshPro.dll</HintPath>
+		</Reference>
+		<Reference Include="DelaunayER">
+		<HintPath>D:\dependancies\DelaunayER.dll</HintPath>
+		</Reference>
+		<Reference Include="DnsClient">
+		<HintPath>D:\dependancies\DnsClient.dll</HintPath>
+		</Reference>
+		<Reference Include="EasyRoads3Dv3">
+		<HintPath>D:\dependancies\EasyRoads3Dv3.dll</HintPath>
+		</Reference>
+		<Reference Include="EZhex1991.EZSoftBone">
+		<HintPath>D:\dependancies\EZhex1991.EZSoftBone.dll</HintPath>
+		</Reference>
+		<Reference Include="Facepunch.BurstCloth">
+		<HintPath>D:\dependancies\Facepunch.BurstCloth.dll</HintPath>
+		</Reference>
+		<Reference Include="Facepunch.Console">
+		<HintPath>D:\dependancies\Facepunch.Console.dll</HintPath>
+		</Reference>
+		<Reference Include="Facepunch.Flexbox">
+		<HintPath>D:\dependancies\Facepunch.Flexbox.dll</HintPath>
+		</Reference>
+		<Reference Include="Facepunch.GoogleSheets">
+		<HintPath>D:\dependancies\Facepunch.GoogleSheets.dll</HintPath>
+		</Reference>
+		<Reference Include="Facepunch.Input">
+		<HintPath>D:\dependancies\Facepunch.Input.dll</HintPath>
+		</Reference>
+		<Reference Include="Facepunch.Network">
+		<HintPath>D:\dependancies\Facepunch.Network.dll</HintPath>
+		</Reference>
+		<Reference Include="Facepunch.Nexus">
+		<HintPath>D:\dependancies\Facepunch.Nexus.dll</HintPath>
+		</Reference>
+		<Reference Include="Facepunch.Ping">
+		<HintPath>D:\dependancies\Facepunch.Ping.dll</HintPath>
+		</Reference>
+		<Reference Include="Facepunch.Raknet">
+		<HintPath>D:\dependancies\Facepunch.Raknet.dll</HintPath>
+		</Reference>
+		<Reference Include="Facepunch.Rcon">
+		<HintPath>D:\dependancies\Facepunch.Rcon.dll</HintPath>
+		</Reference>
+		<Reference Include="Facepunch.Skeleton">
+		<HintPath>D:\dependancies\Facepunch.Skeleton.dll</HintPath>
+		</Reference>
+		<Reference Include="Facepunch.Sqlite">
+		<HintPath>D:\dependancies\Facepunch.Sqlite.dll</HintPath>
+		</Reference>
+		<Reference Include="Facepunch.SteamNetworking">
+		<HintPath>D:\dependancies\Facepunch.SteamNetworking.dll</HintPath>
+		</Reference>
+		<Reference Include="Facepunch.Steamworks.Posix">
+		<HintPath>D:\dependancies\Facepunch.Steamworks.Posix.dll</HintPath>
+		</Reference>
+		<Reference Include="Facepunch.System">
+		<HintPath>D:\dependancies\Facepunch.System.dll</HintPath>
+		</Reference>
+		<Reference Include="Facepunch.Unity">
+		<HintPath>D:\dependancies\Facepunch.Unity.dll</HintPath>
+		</Reference>
+		<Reference Include="Facepunch.UnityEngine">
+		<HintPath>D:\dependancies\Facepunch.UnityEngine.dll</HintPath>
+		</Reference>
+		<Reference Include="Facepunch.UnwrapBaker.Settings">
+		<HintPath>D:\dependancies\Facepunch.UnwrapBaker.Settings.dll</HintPath>
+		</Reference>
+		<Reference Include="FbxBuildTestAssets">
+		<HintPath>D:\dependancies\FbxBuildTestAssets.dll</HintPath>
+		</Reference>
+		<Reference Include="Fleck">
+		<HintPath>D:\dependancies\Fleck.dll</HintPath>
+		</Reference>
+		<Reference Include="GA">
+		<HintPath>D:\dependancies\GA.dll</HintPath>
+		</Reference>
+		<Reference Include="I18N">
+		<HintPath>D:\dependancies\I18N.dll</HintPath>
+		</Reference>
+		<Reference Include="I18N.CJK">
+		<HintPath>D:\dependancies\I18N.CJK.dll</HintPath>
+		</Reference>
+		<Reference Include="I18N.MidEast">
+		<HintPath>D:\dependancies\I18N.MidEast.dll</HintPath>
+		</Reference>
+		<Reference Include="I18N.Other">
+		<HintPath>D:\dependancies\I18N.Other.dll</HintPath>
+		</Reference>
+		<Reference Include="I18N.Rare">
+		<HintPath>D:\dependancies\I18N.Rare.dll</HintPath>
+		</Reference>
+		<Reference Include="I18N.West">
+		<HintPath>D:\dependancies\I18N.West.dll</HintPath>
+		</Reference>
+		<Reference Include="Ionic.Zip.Reduced">
+		<HintPath>D:\dependancies\Ionic.Zip.Reduced.dll</HintPath>
+		</Reference>
+		<Reference Include="LZ4">
+		<HintPath>D:\dependancies\LZ4.dll</HintPath>
+		</Reference>
+		<Reference Include="LZ4pn">
+		<HintPath>D:\dependancies\LZ4pn.dll</HintPath>
+		</Reference>
+		<Reference Include="Melanchall.DryWetMidi">
+		<HintPath>D:\dependancies\Melanchall.DryWetMidi.dll</HintPath>
+		</Reference>
+		<Reference Include="Microsoft.Bcl.AsyncInterfaces">
+		<HintPath>D:\dependancies\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+		</Reference>
+		<Reference Include="Microsoft.Identity.Client">
+		<HintPath>D:\dependancies\Microsoft.Identity.Client.dll</HintPath>
+		</Reference>
+		<Reference Include="Microsoft.Identity.Client.Extensions.Msal">
+		<HintPath>D:\dependancies\Microsoft.Identity.Client.Extensions.Msal.dll</HintPath>
+		</Reference>
+		<Reference Include="Microsoft.IdentityModel.Abstractions">
+		<HintPath>D:\dependancies\Microsoft.IdentityModel.Abstractions.dll</HintPath>
+		</Reference>
+		<Reference Include="MidiJack">
+		<HintPath>D:\dependancies\MidiJack.dll</HintPath>
+		</Reference>
+		<Reference Include="Mono.Cecil">
+		<HintPath>D:\dependancies\Mono.Cecil.dll</HintPath>
+		</Reference>
+		<Reference Include="Mono.Cecil.Mdb">
+		<HintPath>D:\dependancies\Mono.Cecil.Mdb.dll</HintPath>
+		</Reference>
+		<Reference Include="Mono.Cecil.Pdb">
+		<HintPath>D:\dependancies\Mono.Cecil.Pdb.dll</HintPath>
+		</Reference>
+		<Reference Include="Mono.Cecil.Rocks">
+		<HintPath>D:\dependancies\Mono.Cecil.Rocks.dll</HintPath>
+		</Reference>
+		<Reference Include="Mono.Data.Sqlite">
+		<HintPath>D:\dependancies\Mono.Data.Sqlite.dll</HintPath>
+		</Reference>
+		<Reference Include="Mono.Data.Tds">
+		<HintPath>D:\dependancies\Mono.Data.Tds.dll</HintPath>
+		</Reference>
+		<Reference Include="Mono.Security">
+		<HintPath>D:\dependancies\Mono.Security.dll</HintPath>
+		</Reference>
+		<Reference Include="MP3Sharp">
+		<HintPath>D:\dependancies\MP3Sharp.dll</HintPath>
+		</Reference>
+		<Reference Include="MySql.Data">
+		<HintPath>D:\dependancies\MySql.Data.dll</HintPath>
+		</Reference>
+		<Reference Include="Newtonsoft.Json">
+		<HintPath>D:\dependancies\Newtonsoft.Json.dll</HintPath>
+		</Reference>
+		<Reference Include="Oxide.Common">
+		<HintPath>D:\dependancies\Oxide.Common.dll</HintPath>
+		</Reference>
+		<Reference Include="Oxide.Core">
+		<HintPath>D:\dependancies\Oxide.Core.dll</HintPath>
+		</Reference>
+		<Reference Include="Oxide.CSharp">
+		<HintPath>D:\dependancies\Oxide.CSharp.dll</HintPath>
+		</Reference>
+		<Reference Include="Oxide.MySql">
+		<HintPath>D:\dependancies\Oxide.MySql.dll</HintPath>
+		</Reference>
+		<Reference Include="Oxide.References">
+		<HintPath>D:\dependancies\Oxide.References.dll</HintPath>
+		</Reference>
+		<Reference Include="Oxide.Rust">
+		<HintPath>D:\dependancies\Oxide.Rust.dll</HintPath>
+		</Reference>
+		<Reference Include="Oxide.SQLite">
+		<HintPath>D:\dependancies\Oxide.SQLite.dll</HintPath>
+		</Reference>
+		<Reference Include="Oxide.Unity">
+		<HintPath>D:\dependancies\Oxide.Unity.dll</HintPath>
+		</Reference>
+		<Reference Include="RTLTMPro">
+		<HintPath>D:\dependancies\RTLTMPro.dll</HintPath>
+		</Reference>
+		<Reference Include="Rust.Clans">
+		<HintPath>D:\dependancies\Rust.Clans.dll</HintPath>
+		</Reference>
+		<Reference Include="Rust.Clans.Local">
+		<HintPath>D:\dependancies\Rust.Clans.Local.dll</HintPath>
+		</Reference>
+		<Reference Include="Rust.Data">
+		<HintPath>D:\dependancies\Rust.Data.dll</HintPath>
+		</Reference>
+		<Reference Include="Rust.Demo">
+		<HintPath>D:\dependancies\Rust.Demo.dll</HintPath>
+		</Reference>
+		<Reference Include="Rust.FileSystem">
+		<HintPath>D:\dependancies\Rust.FileSystem.dll</HintPath>
+		</Reference>
+		<Reference Include="Rust.Global">
+		<HintPath>D:\dependancies\Rust.Global.dll</HintPath>
+		</Reference>
+		<Reference Include="Rust.Harmony">
+		<HintPath>D:\dependancies\Rust.Harmony.dll</HintPath>
+		</Reference>
+		<Reference Include="Rust.Localization">
+		<HintPath>D:\dependancies\Rust.Localization.dll</HintPath>
+		</Reference>
+		<Reference Include="Rust.Platform">
+		<HintPath>D:\dependancies\Rust.Platform.dll</HintPath>
+		</Reference>
+		<Reference Include="Rust.Platform.Common">
+		<HintPath>D:\dependancies\Rust.Platform.Common.dll</HintPath>
+		</Reference>
+		<Reference Include="Rust.Platform.Steam">
+		<HintPath>D:\dependancies\Rust.Platform.Steam.dll</HintPath>
+		</Reference>
+		<Reference Include="Rust.UI">
+		<HintPath>D:\dependancies\Rust.UI.dll</HintPath>
+		</Reference>
+		<Reference Include="Rust.Workshop">
+		<HintPath>D:\dependancies\Rust.Workshop.dll</HintPath>
+		</Reference>
+		<Reference Include="Rust.World">
+		<HintPath>D:\dependancies\Rust.World.dll</HintPath>
+		</Reference>
+		<Reference Include="SingularityGroup.HotReload.Runtime">
+		<HintPath>D:\dependancies\SingularityGroup.HotReload.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="SingularityGroup.HotReload.Runtime.Public">
+		<HintPath>D:\dependancies\SingularityGroup.HotReload.Runtime.Public.dll</HintPath>
+		</Reference>
+		<Reference Include="System.ClientModel">
+		<HintPath>D:\dependancies\System.ClientModel.dll</HintPath>
+		</Reference>
+		<Reference Include="System.ComponentModel.Composition">
+		<HintPath>D:\dependancies\System.ComponentModel.Composition.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Configuration.Install">
+		<HintPath>D:\dependancies\System.Configuration.Install.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Data.SQLite">
+		<HintPath>D:\dependancies\System.Data.SQLite.dll</HintPath>
+		</Reference>
+		<Reference Include="System.EnterpriseServices">
+		<HintPath>D:\dependancies\System.EnterpriseServices.dll</HintPath>
+		</Reference>
+		<Reference Include="System.IO.Hashing">
+		<HintPath>D:\dependancies\System.IO.Hashing.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Memory.Data">
+		<HintPath>D:\dependancies\System.Memory.Data.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Security.Cryptography.ProtectedData">
+		<HintPath>D:\dependancies\System.Security.Cryptography.ProtectedData.dll</HintPath>
+		</Reference>
+		<Reference Include="System.ServiceModel.Internals">
+		<HintPath>D:\dependancies\System.ServiceModel.Internals.dll</HintPath>
+		</Reference>
+		<Reference Include="TimeZoneConverter">
+		<HintPath>D:\dependancies\TimeZoneConverter.dll</HintPath>
+		</Reference>
+		<Reference Include="UIEffect">
+		<HintPath>D:\dependancies\UIEffect.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.AI.Navigation">
+		<HintPath>D:\dependancies\Unity.AI.Navigation.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Burst">
+		<HintPath>D:\dependancies\Unity.Burst.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Burst.Unsafe">
+		<HintPath>D:\dependancies\Unity.Burst.Unsafe.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Collections">
+		<HintPath>D:\dependancies\Unity.Collections.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Collections.LowLevel.ILSupport">
+		<HintPath>D:\dependancies\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Formats.Fbx.Runtime">
+		<HintPath>D:\dependancies\Unity.Formats.Fbx.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Mathematics">
+		<HintPath>D:\dependancies\Unity.Mathematics.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.MemoryProfiler">
+		<HintPath>D:\dependancies\Unity.MemoryProfiler.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Recorder">
+		<HintPath>D:\dependancies\Unity.Recorder.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Recorder.Base">
+		<HintPath>D:\dependancies\Unity.Recorder.Base.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.TerrainTools">
+		<HintPath>D:\dependancies\Unity.TerrainTools.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.TextMeshPro">
+		<HintPath>D:\dependancies\Unity.TextMeshPro.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Timeline">
+		<HintPath>D:\dependancies\Unity.Timeline.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine">
+		<HintPath>D:\dependancies\UnityEngine.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AccessibilityModule">
+		<HintPath>D:\dependancies\UnityEngine.AccessibilityModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AIModule">
+		<HintPath>D:\dependancies\UnityEngine.AIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AndroidJNIModule">
+		<HintPath>D:\dependancies\UnityEngine.AndroidJNIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AnimationModule">
+		<HintPath>D:\dependancies\UnityEngine.AnimationModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AssetBundleModule">
+		<HintPath>D:\dependancies\UnityEngine.AssetBundleModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AudioModule">
+		<HintPath>D:\dependancies\UnityEngine.AudioModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ClothModule">
+		<HintPath>D:\dependancies\UnityEngine.ClothModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ClusterInputModule">
+		<HintPath>D:\dependancies\UnityEngine.ClusterInputModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ClusterRendererModule">
+		<HintPath>D:\dependancies\UnityEngine.ClusterRendererModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ContentLoadModule">
+		<HintPath>D:\dependancies\UnityEngine.ContentLoadModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.CoreModule">
+		<HintPath>D:\dependancies\UnityEngine.CoreModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.CrashReportingModule">
+		<HintPath>D:\dependancies\UnityEngine.CrashReportingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.DirectorModule">
+		<HintPath>D:\dependancies\UnityEngine.DirectorModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.DSPGraphModule">
+		<HintPath>D:\dependancies\UnityEngine.DSPGraphModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.GameCenterModule">
+		<HintPath>D:\dependancies\UnityEngine.GameCenterModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.GIModule">
+		<HintPath>D:\dependancies\UnityEngine.GIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.GridModule">
+		<HintPath>D:\dependancies\UnityEngine.GridModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.HotReloadModule">
+		<HintPath>D:\dependancies\UnityEngine.HotReloadModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ImageConversionModule">
+		<HintPath>D:\dependancies\UnityEngine.ImageConversionModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.IMGUIModule">
+		<HintPath>D:\dependancies\UnityEngine.IMGUIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.InputLegacyModule">
+		<HintPath>D:\dependancies\UnityEngine.InputLegacyModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.InputModule">
+		<HintPath>D:\dependancies\UnityEngine.InputModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.JSONSerializeModule">
+		<HintPath>D:\dependancies\UnityEngine.JSONSerializeModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.LocalizationModule">
+		<HintPath>D:\dependancies\UnityEngine.LocalizationModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ParticleSystemModule">
+		<HintPath>D:\dependancies\UnityEngine.ParticleSystemModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.PerformanceReportingModule">
+		<HintPath>D:\dependancies\UnityEngine.PerformanceReportingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.Physics2DModule">
+		<HintPath>D:\dependancies\UnityEngine.Physics2DModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.PhysicsModule">
+		<HintPath>D:\dependancies\UnityEngine.PhysicsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ProfilerModule">
+		<HintPath>D:\dependancies\UnityEngine.ProfilerModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.PropertiesModule">
+		<HintPath>D:\dependancies\UnityEngine.PropertiesModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+		<HintPath>D:\dependancies\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ScreenCaptureModule">
+		<HintPath>D:\dependancies\UnityEngine.ScreenCaptureModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SharedInternalsModule">
+		<HintPath>D:\dependancies\UnityEngine.SharedInternalsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SpriteMaskModule">
+		<HintPath>D:\dependancies\UnityEngine.SpriteMaskModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SpriteShapeModule">
+		<HintPath>D:\dependancies\UnityEngine.SpriteShapeModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.StreamingModule">
+		<HintPath>D:\dependancies\UnityEngine.StreamingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SubstanceModule">
+		<HintPath>D:\dependancies\UnityEngine.SubstanceModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SubsystemsModule">
+		<HintPath>D:\dependancies\UnityEngine.SubsystemsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TerrainModule">
+		<HintPath>D:\dependancies\UnityEngine.TerrainModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TerrainPhysicsModule">
+		<HintPath>D:\dependancies\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TextCoreFontEngineModule">
+		<HintPath>D:\dependancies\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TextCoreTextEngineModule">
+		<HintPath>D:\dependancies\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TextRenderingModule">
+		<HintPath>D:\dependancies\UnityEngine.TextRenderingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TilemapModule">
+		<HintPath>D:\dependancies\UnityEngine.TilemapModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TLSModule">
+		<HintPath>D:\dependancies\UnityEngine.TLSModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UI">
+		<HintPath>D:\dependancies\UnityEngine.UI.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UIElementsModule">
+		<HintPath>D:\dependancies\UnityEngine.UIElementsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UIModule">
+		<HintPath>D:\dependancies\UnityEngine.UIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UmbraModule">
+		<HintPath>D:\dependancies\UnityEngine.UmbraModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityAnalyticsCommonModule">
+		<HintPath>D:\dependancies\UnityEngine.UnityAnalyticsCommonModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityAnalyticsModule">
+		<HintPath>D:\dependancies\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityConnectModule">
+		<HintPath>D:\dependancies\UnityEngine.UnityConnectModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityCurlModule">
+		<HintPath>D:\dependancies\UnityEngine.UnityCurlModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityTestProtocolModule">
+		<HintPath>D:\dependancies\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+		<HintPath>D:\dependancies\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestAudioModule">
+		<HintPath>D:\dependancies\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestModule">
+		<HintPath>D:\dependancies\UnityEngine.UnityWebRequestModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestTextureModule">
+		<HintPath>D:\dependancies\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestWWWModule">
+		<HintPath>D:\dependancies\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VehiclesModule">
+		<HintPath>D:\dependancies\UnityEngine.VehiclesModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VFXModule">
+		<HintPath>D:\dependancies\UnityEngine.VFXModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VideoModule">
+		<HintPath>D:\dependancies\UnityEngine.VideoModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VirtualTexturingModule">
+		<HintPath>D:\dependancies\UnityEngine.VirtualTexturingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VRModule">
+		<HintPath>D:\dependancies\UnityEngine.VRModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.WindModule">
+		<HintPath>D:\dependancies\UnityEngine.WindModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.XRModule">
+		<HintPath>D:\dependancies\UnityEngine.XRModule.dll</HintPath>
+		</Reference>
+		<Reference Include="ZString">
+		<HintPath>D:\dependancies\ZString.dll</HintPath>
+		</Reference>
+	</ItemGroup>
 </Project>
